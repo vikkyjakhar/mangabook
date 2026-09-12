@@ -114,7 +114,7 @@ export default function MangaReaderPage() {
 
       <div className="flex flex-col items-center justify-center py-8 bg-[#0a0a0a]">
         {pages.map((page, index) => {
-          const imageUrl = `${baseUrl}/data/${hash}/${page}`;
+          const imageUrl = `${baseUrl}/data/${hash}/${page}?t=${Date.now()}`;
           return (
             <div key={page} className="w-full max-w-4xl flex justify-center mb-0">
               <img 
