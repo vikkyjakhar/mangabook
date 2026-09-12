@@ -1,0 +1,1 @@
+﻿fetch("https://graphql.anilist.co", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ query: `query { Page { media(search: "Inkya no Boku ni Batsu Game", type: MANGA, isAdult: false) { id isAdult title { romaji } } } }` }) }).then(async r => console.log(JSON.stringify(await r.json(), null, 2)))

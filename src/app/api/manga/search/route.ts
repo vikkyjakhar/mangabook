@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import { NextResponse } from 'next/server';
 
 const MANGADEX_API_URL = 'https://api.mangadex.org';
@@ -10,7 +11,7 @@ export async function GET(request: Request) {
   const offset = (page - 1) * limit;
 
   try {
-    const contentRatings = '&contentRating[]=safe&contentRating[]=suggestive&contentRating[]=erotica&contentRating[]=pornographic';
+    const contentRatings = '&contentRating[]=safe&contentRating[]=suggestive';
     const url = title 
       ? `${MANGADEX_API_URL}/manga?title=${title}&includes[]=cover_art&limit=${limit}&offset=${offset}${contentRatings}`
       : `${MANGADEX_API_URL}/manga?includes[]=cover_art&limit=${limit}&offset=${offset}&order[rating]=desc${contentRatings}`;

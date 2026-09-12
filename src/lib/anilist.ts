@@ -2,7 +2,7 @@ export const fetchAnilistTopManga = async (page = 1, perPage = 10) => {
   const query = `
     query ($page: Int, $perPage: Int) {
       Page (page: $page, perPage: $perPage) {
-        media (type: MANGA, sort: POPULARITY_DESC) {
+        media (type: MANGA, sort: POPULARITY_DESC, isAdult: false) {
           id
           title { romaji english }
           coverImage { large }
