@@ -32,6 +32,11 @@ export default function RootLayout({
         <main className="flex-1 flex flex-col">
           {children}
         </main>
+        <footer className="w-full border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-[#1a0f0d] py-6 text-center">
+          <p className="text-sm text-gray-500 dark:text-gray-400">
+            MangaBook - <span className="font-semibold text-brand-primary dark:text-brand-secondary">By comicbook.brave</span>
+          </p>
+        </footer>
       </body>
     </html>
   );
