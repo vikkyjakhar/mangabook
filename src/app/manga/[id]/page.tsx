@@ -48,8 +48,8 @@ export default function MangaDetailsPage() {
         } else {
           // It's a MangaDex ID
           const [mangaRes, chaptersRes] = await Promise.all([
-            axios.get(`/api/manga/${id}`),
-            axios.get(`/api/manga/${id}/feed`)
+            axios.get(`/api/manga/${id}?t=${Date.now()}`),
+            axios.get(`/api/manga/${id}/feed?t=${Date.now()}`)
           ]);
           
           const m = mangaRes.data.data;

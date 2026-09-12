@@ -21,7 +21,7 @@ export default function MangaReaderPage() {
   useEffect(() => {
     async function fetchChapterPages() {
       try {
-        const res = await axios.get(`/api/manga/chapter/${id}`);
+        const res = await axios.get(`/api/manga/chapter/${id}?t=${Date.now()}`);
         const data = res.data;
         setBaseUrl(data.baseUrl);
         setHash(data.chapter?.hash || '');
