@@ -1,0 +1,1096 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="max-age=604800, must-revalidate">
+	<meta name="rating" content="general">
+	<!--<link href="/rss/index.php" rel="alternate" type="application/rss+xml" title="News" />-->
+	<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+	<title>Library Genesis</title>
+		
+	<!--[if IE 6]>
+	<style>
+		body {behavior: url("/csshover3.htc");}
+		#menu li .drop {background:url("img/drop.gif") no-repeat right 8px; 
+	</style>
+	<![endif]-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">	
+	
+<link href="/css/font.min.css" rel="stylesheet">	
+<style>
+nav.navbar .dropdown:hover > .dropdown-menu {
+ display: block; 
+}
+.bd-placeholder-img {
+	font-size: 1.125rem;
+	text-anchor: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+@media (min-width: 768px) {
+			.bd-placeholder-img-lg {
+			font-size: 3.5rem;
+		}
+	}
+
+.panel-heading .accordion-toggle:after {
+    font-family: "Glyphicons Halflings";  
+    content: "\e114";    
+    float: right;       
+    color: grey;         
+}
+.panel-heading .accordion-toggle.collapsed:after {
+    content: "\e080";   
+}
+.tooltip-inner {
+    max-width: 350px;
+    width: 350px; 
+}
+h1 {
+	display: block; 
+	font-size: 1.8rem; 
+	font-weight: bold; 
+	font-family: Georgia, "Times New Roman", Times, serif;  color: #A00000; 
+}
+#tablelibgen td { 
+	font-family: "Pt Sans", Tahoma, Helvetica, sans-serif; 
+	margin: 0; 
+	padding: 0em 3px; 
+	font-size: 1rem;
+}
+
+#tablelibgen1 td { 
+	font-family: "Pt Sans", Tahoma, Helvetica, sans-serif; 
+	margin: 0; 
+	padding: 0em 3px; 
+	font-size: 1rem;
+}
+
+.taghide {
+    display: none; 
+}
+.taghide + label ~ div {
+    display: none;
+}
+/* оформляем текст label */
+.taghide + label {
+    display: inline-block; 
+}
+/* вид текста label при активном переключателе */
+
+/* когда чекбокс активен показываем блоки с содержанием  */
+.taghide:checked + label + div {
+    display: block; 
+}
+
+
+
+/*.navbar {
+	background-color: #BBBBBB;
+}*/
+	</style>
+
+	<link rel="stylesheet" href="/css/dark-mode.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="../css/paginator3000.css" />
+<script type="text/javascript" src="../js/paginator3000.js"></script><script data-cfasync="false" async type="text/javascript" src="//je.deuxseethe.com/rUJqARoMIAl18z/146156"></script>
+
+
+
+
+</head>
+<body>    
+<nav class="navbar navbar-expand-md navbar-dark bg-secondary  mb-1">
+  
+   <a class="navbar-brand" href="/index.php">
+    <img src="/img/logo.png"  height="30" alt="">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/community/app.php/article/news">NEWS <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/community/">FORUM <span class="sr-only">(current)</span></a>
+      </li>
+	
+      <li class="nav-item dropdown">
+<a class="btn btn-secondary dropdown-toggle" href="/community/ucp.php?mode=login" role="button" id="dropdownMenuLink"  aria-haspopup="true" aria-expanded="false">
+          LOGIN
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">    
+          <a class="dropdown-item" href="/community/ucp.php?mode=register">Register</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  aria-haspopup="true" aria-expanded="false">
+          DOWNLOAD
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">      
+
+          <a class="dropdown-item" href="/mirrors.php">Mirrors</a>
+          <a class="dropdown-item" href="http://libgenfrialc7tguyjywa36vtrdcplwpxaw43h6o63dmmwhvavo5rqqd.onion/">TOR</a>
+
+	<div class="dropdown-divider"></div>
+         <h6 class="dropdown-header">P2P</h6>
+          <a class="dropdown-item" href="/torrents/">Torrents</a>
+          <a class="dropdown-item" href="https://ipdl.cat/data/torrents.html">Torrents status</a>
+          <a class="dropdown-item" href="/nzb/">Usenet (*.nzb)</a>
+          <a class="dropdown-item" href="/soft/">Soft</a>
+	<!--https://phillm.net/libgen-stats-table.php-->
+
+
+
+
+	<div class="dropdown-divider"></div>
+         <h6 class="dropdown-header">DB Dumps</h6>
+          <a class="dropdown-item" href="/dirlist.php?dir=dbdumps">Libgen</a>
+          <a class="dropdown-item" href="http://libgen.rs/dbdumps/">libgen.rs (gen.lib.rus.ec)</a>
+
+	<!--<div class="dropdown-divider"></div>
+ 	 <a class="dropdown-item" href="/magz0/">Unsorted magz</a>
+ 	 <a class="dropdown-item" href="/fict0/">Unsorted fiction</a>
+
+	 <a class="dropdown-item" href="/comics4/">Unsorted comics</a>
+        </div>-->
+
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="btn btn-secondary dropdown-toggle" href="librarian.php" role="button" id="dropdownMenuLink"  aria-haspopup="true" aria-expanded="false">
+          UPLOAD
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">  
+          <a class="dropdown-item" href="ftp://ftp.libgen.bz/upload/">FTP</a> 
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="btn btn-secondary dropdown-toggle" href="/index.php?req=fmode:last&topics1=all" role="button" id="dropdownMenuLink"  aria-haspopup="true" aria-expanded="false">
+          LAST
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+	<a class="dropdown-item" href="/index.php?req=fmode:last&topics1=all"><b>Files</b></a>
+
+          <a class="dropdown-item" href="/index.php?req=fmode:last&topics%5B%5D=l">Libgen</a>
+          <a class="dropdown-item" href="/index.php?req=fmode:last&topics%5B%5D=a">Scientific Articles</a> 
+          <a class="dropdown-item" href="/index.php?req=fmode:last&topics%5B%5D=f">Fiction</a> 
+          <a class="dropdown-item" href="/index.php?req=fmode:last&topics%5B%5D=c">Comics</a> 
+          <a class="dropdown-item" href="/index.php?req=fmode:last&topics%5B%5D=m">Magazines</a> 
+          <a class="dropdown-item" href="/index.php?req=fmode:last&topics%5B%5D=s">Standards</a> 
+          <a class="dropdown-item" href="/index.php?req=fmode:last&topics%5B%5D=r">Fiction RUS</a>
+	<div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/index.php?req=mode:last&curtab=e">Editions</a> 
+          <a class="dropdown-item" href="/index.php?req=mode:last&curtab=s">Series</a>
+          <a class="dropdown-item" href="/index.php?req=mode:last&curtab=p">Publishers</a> 
+        <!--  <a class="dropdown-item" href="/index.php?req=mode:last&curtab=f">Files</a> -->
+          <a class="dropdown-item" href="/index.php?req=mode:last&curtab=a">Authors</a> 
+          <a class="dropdown-item" href="/index.php?req=mode:last&curtab=w">Works</a>
+
+
+  
+        </div>
+
+
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  aria-haspopup="true" aria-expanded="false">
+          OTHERS
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="dropdown01">  
+          <a class="dropdown-item" href="json.php">API</a> 
+          <a class="dropdown-item" href="rss.php">RSS</a> 
+          <a class="dropdown-item" href="top.php">Top 100 users</a> 
+          <a class="dropdown-item" href="stat.php">Stats</a>
+
+	<a class="dropdown-item" href="topics.php">Topics</a>
+
+          <a class="dropdown-item" href="batchsearchindex.php">Batch search</a>  
+          <a class="dropdown-item" href="biblioservice.php">Bibliographic services</a>
+          <a class="dropdown-item" href="https://wiki.mhut.org/software:libgen_desktop">Libgen librarian for desktop</a>
+
+
+          <a class="dropdown-item" href="/code/">Source (PHP)</a>
+          <a class="dropdown-item" href="/soft/">LG soft</a>
+          <!--<a class="dropdown-item" href="/import/">Import local files in LG format</a>-->
+          <a class="dropdown-item" href="https://z-library.se/fulltext/">Full text search</a>
+
+
+
+        </div>
+      </li>
+
+
+
+     <!-- <li class="nav-item dropdown">
+        <a class="btn btn-secondary dropdown-toggle" href="topics.php" role="button" id="dropdownMenuLink"  aria-haspopup="true" aria-expanded="false">
+          Topics
+        </a>
+      </li>
+-->
+
+      <li class="nav-item dropdown">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"  aria-haspopup="true" aria-expanded="false">
+          LINKS
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="dropdown01">  
+
+
+          
+          <a class="dropdown-item" href="http://sci-hub.ru">Sci-hub</a> 
+          <a class="dropdown-item" href="http://magzdb.org">Magzdb.org</a>
+
+          <a class="dropdown-item" href="http://nlr.ru/rlin/Periodika_rus.php">РНБ</a>
+          <a class="dropdown-item" href="http://rsl.ru/">РГБ</a>
+          <a class="dropdown-item" href="http://loc.gov/">LOC</a>
+          <a class="dropdown-item" href="https://comicvine.gamespot.com/">ComicVine</a>
+          <a class="dropdown-item" href="http://cyberleninka.ru/">Cyberleninka</a>
+          <a class="dropdown-item" href="http://lib.rus.ec/">Lib.rus.ec</a>
+          <a class="dropdown-item" href="http://flibusta.net/">Flibusta.net</a>
+          <a class="dropdown-item" href="http://goodreads.com/">Goodreads.com</a>
+          <a class="dropdown-item" href="http://worldcat.org/">Worldcat.org</a>
+          <a class="dropdown-item" href="https://wiki.archiveteam.org/">Archive team</a>
+          <a class="dropdown-item" href="https://www.reddit.com/r/libgen/">Reddit</a>
+          <a class="dropdown-item" href="http://annas-archive.org/">Anna's Archive</a>
+          <a class="dropdown-item" href="https://welib.org/">Welib</a>
+          <a class="dropdown-item" href="https://open-slum.org/">The Shadow Library Uptime Monitor</a>
+
+        </div>
+
+      </li>
+
+
+      <li class="nav-item dropdown">
+        <a class="btn btn-secondary" href="index.php?req=mode:req&curtab=e" role="button" id="dropdownMenuLink"  aria-haspopup="true" aria-expanded="false">
+          WANTED
+        </a>
+      </li>
+
+    </ul>
+  </div>
+
+  <div class="nav-link">
+
+    <div class="custom-control custom-switch">
+      <input type="checkbox" class="custom-control-input" id="darkSwitch">
+      <label class="custom-control-label" for="darkSwitch">🌓</label>
+    </div>
+    <script src="/js/dark-mode-switch.js"></script>
+  </div>
+   <a class="navbar-brand" href="setlang.php?req=sci-fi&lang=ru">RU</a>
+</nav>
+<form class="card p-2 needs-validation" novalidate id="formlibgen" action="index.php" enctype="multipart/form-data" METHOD="GET">
+<div class="input-group mb-3" >
+	<input autofocus type="text" class="form-control" placeholder="Input value" name="req" aria-label="input text" aria-describedby="button-addon2" value="sci-fi" required>
+	<div class="input-group-append">
+	<button class="btn btn-outline-secondary"  id="button-addon2" type="submit">&nbsp;&nbsp;&nbsp;&nbsp;&#128269;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+	</div>
+
+	<div class="invalid-feedback">Input value</div>
+</div>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-8">	
+			<div class="d-block" id="topic">
+				<strong>Search in fields:</strong>
+				<input type="checkbox" checked class="column-input" id="colt" name="columns[]" value="t">
+				<label class="column-label" for="coltitle">Title</label>
+				<input type="checkbox" checked class="column-input" id="cola" name="columns[]" value="a">
+				<label class="column-label" for="colauthor">Author(s)</label>
+				<input type="checkbox" checked class="column-input" id="cols" name="columns[]" value="s">
+				<label class="column-label" for="colseries">Series</label>
+				<input type="checkbox" checked class="column-input" id="coly" name="columns[]" value="y">
+				<label class="column-label" for="colyear">Year</label>
+				<input type="checkbox" checked class="column-input" id="colp" name="columns[]" value="p">
+				<label class="column-label" for="colpublisher">Publisher</label>
+				<input type="checkbox" checked class="column-input" id="coli" name="columns[]" value="i">
+				<label class="column-label" for="colisbn">ISBN</label>
+	  		</div>
+	
+	  		<div class="d-block" id="object">
+				<strong>Search in objects:</strong>
+				<input type="checkbox" checked class="column-input" id="objf" name="objects[]" value="f">
+				<label class="column-label" for="objf">Files</label>
+				<input type="checkbox" checked class="column-input" id="obje" name="objects[]" value="e">
+				<label class="column-label" for="obje">Editions</label>
+				<input type="checkbox" checked class="column-input" id="objs" name="objects[]" value="s">
+				<label class="column-label" for="objs">Series</label>
+				<input type="checkbox" checked class="column-input" id="obja" name="objects[]" value="a">
+				<label class="column-label" for="obja">Authors</label>
+				<input type="checkbox" checked class="column-input" id="objp" name="objects[]" value="p">
+				<label class="column-label" for="objp">Publishers</label>
+				<input type="checkbox" checked class="column-input" id="objw" name="objects[]" value="w">
+				<label class="column-label" for="objw">Works</label>
+			</div>
+			<div class="d-block" id="column">
+				<strong>Search in topics :</strong>
+				<input type="checkbox" checked class="column-input" id="topl" name="topics[]" value="l" >
+				<label class="column-label" for="topl">Libgen</label>
+				<input type="checkbox" checked class="column-input" id="topc" name="topics[]" value="c" >
+				<label class="column-label" for="topc">Comics</label>
+				<input type="checkbox" checked class="column-input" id="topf" name="topics[]" value="f" >
+				<label class="column-label" for="topf">Fiction</label>
+				<input type="checkbox" checked class="column-input" id="topa" name="topics[]" value="a" >
+				<label class="column-label" for="topa">Scientific Articles</label>
+				<input type="checkbox" checked class="column-input" id="topm" name="topics[]" value="m" >
+				<label class="column-label" for="topm">Magazines</label>
+				<input type="checkbox" checked class="column-input" id="topr" name="topics[]" value="r" >
+				<label class="column-label" for="topr">Fiction RUS</label>
+				<input type="checkbox" checked class="column-input" id="tops" name="topics[]" value="s" >
+				<label class="column-label" for="tops">Standards</label>
+			</div>
+ 		</div>
+		<div class="col-4">
+
+			<div >
+				<strong>Results per page:</strong>
+
+				<div class="custom-control custom-radio custom-control-inline">
+				<input type="radio" id="res25" name="res" class="custom-control-input" value="25" checked>
+				<label class="custom-control-label" for="res25">25</label>
+				</div>
+				<div class="custom-control custom-radio custom-control-inline">
+				<input type="radio" id="res50" name="res" class="custom-control-input" value="50" >
+				<label class="custom-control-label" for="res50">50</label>
+				</div>
+				<div class="custom-control custom-radio custom-control-inline">
+				<input type="radio" id="res100" name="res" class="custom-control-input" value="100" >
+				<label class="custom-control-label" for="res100">100</label>
+
+				</div>
+ 			</div>
+			<div class="d-block">
+				<table><tr><td>
+					<div class="custom-control custom-switch">
+						<input type="checkbox" class="custom-control-input" id="covers" name="covers" >
+						<label class="custom-control-label" for="covers"><strong>Show Covers</strong></label>
+						<script type="text/javascript">
+						$("input[id=covers]").change(function(){
+							if($(this).is(":checked")==false)
+							{
+								document.cookie = "covers=; expires=Thu 01-Jan-70 00:00:01 GMT;";
+							}
+						});				
+						</script>
+					</div>
+					</td><td> 
+					<div class="custom-control custom-switch">
+						<input type="checkbox" class="custom-control-input" id="showch" name="showch" >
+						<label class="custom-control-label" for="showch"><strong>Show chapters</strong></label>
+						<script type="text/javascript">
+						$("input[id=showch]").change(function(){
+							if($(this).is(":checked")==false)
+							{
+								document.cookie = "showch=; expires=Thu 01-Jan-70 00:00:01 GMT;";
+							}
+						});				
+						</script>
+					</div>
+				</td></tr></table>
+
+ 			</div>
+
+			<div class="d-block">
+
+				<div class="custom-control custom-switch">
+					<input type="checkbox" class="custom-control-input" id="gmode" name="gmode" >
+					<label class="custom-control-label" for="gmode" ><strong>Google mode <a href="#" data-toggle="modal" data-target="#googlemodemodal">?</a></strong></label>
+					<script type="text/javascript">
+					$("input[id=gmode]").change(function(){
+						if($(this).is(":checked")==false)
+						{
+							document.cookie = "gmode=; expires=Thu 01-Jan-70 00:00:01 GMT;";
+						}
+					});
+					</script>
+					
+				</div>
+ 			</div>
+
+			<div >
+
+
+				<strong>Seach in files:</strong>
+
+				<div class="custom-control custom-radio custom-control-inline">
+				<input type="radio" id="all" name="filesuns" class="custom-control-input" value="all" checked>
+				<label class="custom-control-label" for="all">All</label>
+				</div>
+				<div class="custom-control custom-radio custom-control-inline">
+				<input type="radio" id="sort" name="filesuns" class="custom-control-input" value="sort" >
+				<label class="custom-control-label" for="sort">Only sorted</label>
+				</div>
+				<div class="custom-control custom-radio custom-control-inline">
+				<input type="radio" id="unsort" name="filesuns" class="custom-control-input" value="unsort" >
+				<label class="custom-control-label" for="unsort">Only uns.</label>
+				</div>
+
+
+
+ 			</div>
+
+ 		</div>
+	</div>
+</div>
+</form><ul class="nav nav-tabs "><li class="nav-item">
+ <a class="nav-link active " href="/index.php?req=sci-fi&curtab=f">Files <span class="badge badge-primary">10324</span> <i>Showing the first  2000</i></a>
+</li><li class="nav-item">
+ <a class="nav-link  " href="/index.php?req=sci-fi&curtab=e">Editions <span class="badge badge-primary">11057</span></a>
+</li><li class="nav-item">
+ <a class="nav-link  " href="/index.php?req=sci-fi&curtab=s">Series <span class="badge badge-primary">62</span></a>
+</li><li class="nav-item">
+ <a class="nav-link  " href="/index.php?req=sci-fi&curtab=a">Authors <span class="badge badge-primary">0</span></a>
+</li><li class="nav-item">
+ <a class="nav-link  " href="/index.php?req=sci-fi&curtab=p">Publishers <span class="badge badge-primary">9</span></a>
+</li><li class="nav-item">
+ <a class="nav-link  " href="/index.php?req=sci-fi&curtab=w">Works <span class="badge badge-primary">578</span></a>
+</li><li class="navbar-right" style="float: right !important;"><a class="nav-link" href="/json.php?object=f&ids=29318,994699,1755767,1755769,1755771,1755772,1755774,1755776,1755778,1755782,1755785,1755786,1755788,1755792,112918339,29316,29317,29319,29320,29321,29322,29323,29324,30369,30370,30505,36417,91176,131287,163262,181279,193960,193961,193962,193963,193964,193965,193966,193967,539869,557305,563130,583807,583808,583809,583810,583811,583812,583813,583814,583815,583816,583817,583818,583819,583820,583821,583822,583823,583824,583825,583826,583827,583828,583829,583830,583831,585895,585897,585908,585909,585910,585911,585912,585913,585914,586370,586371,586372,586373,586374,586386,586387,586548,586580,586651,586718,586814,586815,586839,586878,587027,587029,587184,587201,587202,587217,587233,587235,587244,587295,611289,611303,611417,611418,658664,658749,658851,658983,658999,659023,659033,659041,659042,659044,661025,689407,689523,689554,689664,689676,689679,689680,689697,689727,698854,719363,719364,719385,719397,719401,719402,719411,719420,719436,811344,811479,811714,866908,880507,880508,880509,880510,880511,880512,880513,880514,880515,880516,880517,880518,880519,880520,934746,934747,934748,934749,934750,934751,934752,934753,934754,937648,937649,937650,937651,950265,952304,994698,994700,994701,1136530,1136974,1137516,1206104,1401101,1755780,1755787,1755793,1755796,1776109,1776111,1816584,1816585,1816637,1816638,1819367,1819368,1859384,1859387,1974479,2133728,2192925,2192926,2192927,2192928,2192929,2192930,2192931,2192932,2192933,2192934,2192935,2192936,2192937,2192938,2192939,2192940,2192941,2192942,2192943,2192944,2192945,2192946,2192947,2192948,2192949,2192950,2192951,2192952,2192953,2192954,2192955,2192956,2192957,2192958,2192959,2192960,2192961,2192962,2192963,2192964,2192965,2192966,2192967,2192968,2192969,2192970,2192971,2192972,2192973,2192974,2192975,2192976,2192977,2192978,2192979,2192980,2192981,2192982,2192983,2192984,2192985,2192986,2192987,2192988,2192989,2192990,2192991,2192992,2192993,2192994,2192995,2192996,2192997,2192998,2192999,2193000,2193001,2193002,2193003,2193004,2193005,2193006,2193007,2193008,2193009,2193010,2193011,2193012,2193013,2193014,2193015,2193016,2193017,2193018,2193019,2193020,2193021,2193022,2193023,2193024,2193025,2193026,2193027,2193028,2193029,2193030,2193031,2193032,2193033,2193034,2193035,2193036,2193037,2193038,2193039,2193040,2193041,2193042,2193043,2193044,2193045,2193046,2193047,2193048,2193049,2193050,2193051,2193052,2193053,2193054,2193055,2193056,2193057,2193058,2193059,2193060,2193061,2193062,2193063,2193064,2193065,2193066,2193067,2193068,2193069,2193070,2193071,2193072,2193073,2193074,2193075,2193076,2193077,2193078,2193079,2193080,2193081,2193082,2193083,2193084,2193085,2193086,2193087,2193088,2193089,2193090,2193091,2193092,2193093,2193094,2193095,2193096,2193097,2193098,2235709,2453666,2453667,2453668,2453669,2453670,2453671,2453672,2453673,2453674,2453675,2453676,2453677,2453678,2453679,2453680,2453681,2453682,2453683,2453684,2507950,2509893,2915852,5656287,5656288,5656289,5930733,6190668,6195313,6196876,6257604,6257605,6427088,6652220,6652221,91127614,93456046,96689731,96904955,96926604,97843691,97848726,97849326,97852316,97852681,97859036,97963679,98180044,98476281,98957726,99814603,100688993,100829134,100829135,101059713,101171036,101211499,101248578,101248580,101248582,101350634,101521952,101599855,101599856,101599857,101599858,101599859,101599860,102459835,102484243,102600046,102706443,102706444,102706445,102776454,102776455,102806300,103057672,103145292,103227530,103227531,103227532,103227533,103227534,103227535,103227536,103227537,103227538,103227539,103227540,103227541,103227542,103227543,103227544,103227545,103227546,103227547,103227548,103227549,103227550,103284721,103390536,103481823,103485912,103520166,103520167,103541618,103552153,103552154,103552155,103582800,105083239,105083240,105085398,105371164,105449611,105449612,106297838,106297839,106297840,107558559,107558569,107558578,107558593,107558603,107558611,107558625,107679342,107679616,107679653,107680337,107681437,107685497,107688061,107688733,107690588,112576748,112797572,112991628,113028816,113261590,113858102,113964665,114244362,114248550,114318262,114318428,114375313,115037339,115037340,5859164,116465301,113591440,99607489,112002231,112002232,113591441,116215711,507815,539870,572409,572410,572412,5287789,5485185,5502988,5802496,5802497,5994103,5994104,6071299,6079992,6085424,6085425,6086386,6164149,6164150,6164809,6164810,6265075,6286990,6286992,6347718,6468671,6491383,6584050,6588639,6604913,6615304,62305571,96706322,96911723,98016213,98200580,99052755,99052756,99595087,99816252,99935457,99935461,100211141,100619532,100716215,100716220,100730561,100730563,100730564,101199900,101211796,101248588,101248590,101449646,101599851,101599852,101599853,101599854,101699599,102157237,102157264,102191076,102559595,102808138,102809934,102820913,102820914,103387942,103387943,103387944,103387945,103387957,103387996,103387998,103573980,104105424,104937959,106098526,107847923,107879940,112555337,112555338,112569607,112569608,112582205,112630723,113045285,113045575,113088634,113098384,113100564,113149793,113207985,113261414,113267488,113267495,113284801,113289867,113289870,113291702,113329943,113339482,113339483,113339484,113344537,113377507,113380185,113380364,113382922,113497990,113538672,113538675,113558949,113565710,113576708,113583327,113728143,113766502,113766503,113766504,113811628,113824990,113825016,113944252,114152853,114157870,114639013,114658119,114660785,114660786,114759297,114797352,115006640,115034572,115076715,115077201,115098297,115264500,115941768,115942308,115968994,116215719,116227602,116229247,116241913,52045683,57422078,79450265,88768064,110231345,113111060,31594,70834,74603,74604,74605,74606,74607,74608,74609,100561,128125,128126,131139,143607,151570,162060,162061,162062,162063,162612,193011,193013,193600,198090,198091,217533,346237,346249,436385,436386,436387,577058,585918,585919,585920,585921,585922,585923,585924,585925,585926,585927,585928,585929,585930,585931,585932,585933,585934,585935,585937,585938,585939,585940,585942,585943,586377,586378,586610,685944,704088,704089,704090,704091,704092,704093,704094,704095,704096,704097,704098,704099,704100,704101,704102,704103,704104,704105,704106,704107,704108,704109,704110,704111,704112,704113,704114,704115,704116,704117,704118,704119,704120,704121,704122,704123,704124,704125,704126,704127,704128,704129,704130,704131,704132,704133,704134,704135,704136,709047,709048,709049,709050,709051,709052,709053,709054,709055,709056,709057,709058,709059,709060,709061,709062,709063,709064,709065,709066,709067,709068,709069,709070,709071,709072,709073,709074,709075,709080,709081,811357,811358,811390,811404,811408,811448,811475,811477,811483,811603,811621,811679,811698,811706,811749,845339,934623,950071,950072,950145,950528,950560,950608,950694,950713,950714,950715,950716,950717,950718,950719,950721,950723,950770,950782,952234,952817,956417,956418,956483,956566,956662,956668,956742,956743,956744,956745,956852,956868,956959,957157,957159,957160,957261,957410,957630,957663,957701,957821,957840,957874,957875,957876,958216,958318,958319,958320,994697,994784,1753667,1755768,1755770,1755775,1755779,1755781,1755783,1755784,1755789,1755790,1755791,1755794,1755795,1816586,1816639,1816641,1824642,1824645,1857118,1857119,1859385,1859386,1859388,1859389,1866362,2040162,2040164,2045710,2142243,2142244,2168942,2434437,2478917,2486125,2601914,2668444,2676354,2887134,2915853,3022431,3033560,3283930,3415437,3445737,3714439,3730034,3730103,3733122,3734058,3734059,3743372,3746730,3755118,3761776,3762103,3763088,3767461,3770014,3771206,3785549,3785690,3795316,3795422,3808722,3817108,3817137,3818946,3818995,3819083,3819353,3819549,3820254,3821563,3821724,3822497,3822588,4054823,4054824,4076913,4076914,4092726,4092727,4105733,4151179,4151180,4151181,4151182,4253697,4305741,4305742,4305743,4312165,4324366,4334108,4357650,4357651,4357652,4357653,4357654,4357655,4357656,4357657,4357658,4357659,4357660,4357661,4357662,4357663,4357664,4357665,4357666,4357667,4357668,4357669,4357670,4357671,4357672,4357673,4357674,4357675,4357676,4357677,4357678,4357679,4357680,4357681,4357682,4357683,4357684,4357685,4357686,4367759,4367760,4383396,4383412,4398313,4398547,4417722,4420057,4420058,4420059,4420060,4420061,4420062,4420063,4420064,4420065,4449679,4498163,4524128,4524129,4543253,4547430,4547431,4879115,4879116,4879117,4882565,4894552,4960252,4960253,4963123,4963124,5068502,5077123,5077124,5079147,5082610,5082611,5092307,5115612,5221744,5224121,5224122,5290688,5290689,5304076,5307420,5308307,5311003,5313810,5313818,5313819,5313820,5313862,5314051,5321528,5323155,5324122,5328781,5330807,5331402,5331403,5338365,5338366,5338367,5338368,5364021,5375941,5377254,5390114,5401556,5410063,5410064,5410065,5410066,5410067,5410068,5410069,5410070,5410071,5410072,5446124,5457709,5475302,5480961,5483077,5483107,5483109,5486600,5494917,5494918,5494919,5496828,5499913,5503944,5503945,5503968,5508705,5509389,5510779,5510780,5512100,5513660,5514981,5515436,5524603,5525658,5528318,5532906,5536878,5540810,5551744,5551836,5552889,5559195,5563009,5563010,5563011,5563740,5563741,5563742,5563743,5563744,5563745,5563746,5563747,5563748,5563749,5563750,5563751,5563752,5563753,5563754,5563755,5563756,5563757,5563758,5563759,5563760,5563761,5563762,5563763,5563764,5563765,5563766,5563767,5563768,5563769,5563770,5563771,5563772,5563773,5563774,5563775,5563776,5563777,5563778,5563779,5563780,5563781,5563782,5563783,5563784,5563785,5563786,5563787,5563788,5563789,5563790,5563791,5563792,5563793,5563794,5563795,5563796,5563797,5608891,5609684,5610520,5610547,5612681,5613349,5613982,5613983,5615335,5616954,5633373,5638201,5644333,5644974,5645065,5645066,5645067,5647076,5647281,5647434,5648262,5649301,5650002,5651076,5651102,5651595,5653742,5653820,5653827,5654543,5656290,5656291,5656292,5656623,5659070,5659073,5659074,5659076,5659077,5659082,5659083,5659090,5659095,5659099,5659100,5659105,5659106,5659108,5659109,5660312,5664481,5664534,5666438,5668102,5668103,5668109,5668115,5668125,5668128,5668721,5670595,5670596,5677821,5678932,5678933,5680780,5682000,5682696,5683099,5683100,5683101,5685522,5685523,5687276,5687277,5687280,5687281,5687312,5688440,5688441,5688770,5688771,5689163,5692953,5692954,5692955,5696503,5702807,5703332,5706126,5708593,5710284,5710285,5710301,5712464,5712468,5712475,5714030,5715445,5715796,5716513,5716905,5725476,5725477,5725478,5725479,5725975,5728916,5735548,5735549,5737573,5738176,5738177,5738706,5738721,5740612,5744468,5744469,5744506,5744507,5747024,5747027,5747028,5750443,5751609,5755786,5755787,5755788,5756965,5756966,5757877,5758721,5760278,5760279,5767932,5767933,5767934,5776011,5776234,5779537,5779538,5781963,5781964,5782589,5782590,5782591,5783593,5785766,5788483,5788484,5788485,5788486,5788487,5788924,5792200,5792201,5792202,5792203,5792204,5792205,5794389,5796083,5796418,5796419,5796420,5800199,5800375,5800376,5802954,5804559,5806995,5807676,5807679,5807681,5807682,5807683,5807684,5807685,5807687,5807688,5807689,5807691,5807692,5807693,5807694,5807695,5807701,5807704,5807705,5807706,5807708,5807709,5807711,5807712,5807720,5807721,5807722,5807723,5808023,5808024,5808029,5808069,5808078,5808079,5808080,5808248,5812494,5816214,5820105,5820481,5827750,5827752,5827758,5831495,5831812,5831813,5836024,5837928,5838361,5838365,5838366,5838367,5838368,5838369,5838370,5838376,5840671,5840673,5840674,5840676,5840678,5840680,5840681,5840686,5840687,5842383,5842394,5842402,5842418,5842537,5842538,5842545,5842546,5842549,5842550,5842552,5842555,5842559,5842563,5848336,5848339,5848342,5848350,5848358,5848374,5848376,5848381,5852864,5855123,5855548,5855551,5855552,5855553,5855554,5855559,5855562,5858943,5858944,5858945,5858946,5861147,5861152,5861159,5862073,5862722,5863696,5864787,5864788,5864789,5864790,5864791,5864792,5864798,5864843,5864844,5866346,5866348,5866349,5866350,5868421,5868888,5868899,5868900,5868901,5869308,5869309,5869310,5869312,5869313,5875414,5877090,5877835,5877839,5877844,5878613,5878614,5878881,5878884,5878955,5878956,5878957,5878958,5879362,5915378,5915643,5916252,5921402,5928091,5928218,5929967,5933392,5935251,5936132,5936476,5942019,5942203,5944049,5944256,5944711,5945026,5946694,5946758,5947689,5947742,5949665,5949666,5949961,5950019,5950265,5954416,5957109,5957993,5958989,5963077,5964373,5964512,5966726,5968087,5969505,5970955,5971233,5972417,5972859,5973557,5973987,5977574,5977783,5978623,5979888,5980878,5981386,5981919,5982700,5983606,5985207,5986063,5988898,5988899,5988900,5992585,5992586,5992589,5992590,5992598,5994921,5995474,5996127,5996154,5997579,6000156,6001712,6002109,6002616,6004152,6004391,6008517,6011092,6011227,6011646,6011816,6011817,6011818,6012131,6013032,6014184,6014877,6016262,6017056,6017606,6017704,6018332,6020949,6020962,6021693,6021785,6023264,6023985,6025551,6026164,6026316,6026927,6026928,6027545,6029120,6029859,6030623,6030783,6031962,6032079,6032822,6035757,6036568,6038982,6041491,6043645,6070876,6071845,6073115,6073776,6074585,6078205,6078211,6079471,6079620,6079625,6079991,6079993,6081043,6081044,6081046,6081814,6081815,6081816,6082275,6082277,6082278,6082279,6082410,6084069,6085795,6085808,6086035,6086258,6086278,6086279,6086544,6086635,6086636,6086809,6091168,6091169,6093261,6096161,6096162,6096163,6103808,6103809,6103810,6104256,6104257,6105365,6105366,6105367,6106027,6107756,6107757,6120353,6130256,6130257,6138312,6143252,6143253,6145980,6146141,6151365,6151366,6151367,6151368,6151369,6152579,6152644,6156130,6156131,6159862,6159863,6160451,6160511,6160718,6161683,6161827,6162876,6162877,6164151,6164989,6166221,6169486,6169492,6169493,6170938,6171429,6174703,6174704,6181211,6181338,6182018,6183313,6187270,6187325,6188155,6188310,6188424,6188565,6188665,6188666,6189004,6189707,6191922,6191923,6191924,6193451,6194274,6194636,6194729,6194945,6195112,6195247,6195248,6195512,6195513,6195651,6195653,6195654,6195655,6195837,6196056,6196416,6196954,6197165,6197230,6197521,6197691,6197766,6197767,6197768,6197769,6197770,6197842,6197843,6197931,6198094,6198288,6198289,6198290,6198302,6198303,6198304,6198305,6198762,6199421,6199425,6199426,6199427,6199428,6199429,6199433,6204007,6204022,6207339,6207429,6207434,6212479,6213086,6213088,6213090,6213178,6213193,6213617,6213759,6214186,6214436,6214673,6214731,6215234,6215280,6215590,6215842,6216754,6217174,6217576,6217577,6217578,6217686,6217912,6217913,6218251,6218252,6218615,6218617,6219095,6219379,6219949,6220182,6220191,6220343,6220758,6220980,6221209,6221213,6221945,6222657,6225648,6225649,6225653,6225654,6225655,6225656,6225662,6225666,6225667,6225675,6225677,6225679,6225711,6225740,6228675,6228698,6228720,6228729,6228730,6228731,6228769,6228770,6228771,6228778,6228785,6228795,6228805,6228809,6228812,6228815,6228816,6228819,6228826,6228843,6228860,6228869,6228870,6228872,6228878,6228889,6228893,6228894,6229989,6229990,6229991,6229995,6230002,6230012,6230040,6230110,6230113,6230116,6230133,6230154,6230163,6230190,6230253,6230267,6230278,6230300,6230311,6230316,6230337,6230339,6230355,6230357,6230361,6230365,6230372,6230379,6230419,6230422,6230425,6230440,6230478,6230482,6232323,6239515,6239516,6239522,6239523,6239525,6239526,6239530,6239531,6239532,6239533,6239539,6239541,6239542,6241776,6241784,6241792,6241817,6241818,6241836,6241852,6241865,6241891,6241918,6242804,6243209,6243210,6243434,6248583,6253086,6257514,6257516,6257559,6257603,6257903,6258226,6258227,6258268,6258273,6258276,6260918,6260919,6260922,6260931,6260932,6260934,6260939,6260943,6260944,6260946,6260951,6260954,6265727,6265741,6269441,6270059,6270060,6274570,6274574,6274575,6274581,6277730,6287959,6287960,6287961,6287971,6287972,6287982,6287983,6289722,6289723,6289725,6289726,6291631,6291632,6291659,6294404,6294425,6294426,6294435,6294448,6294460,6294461,6294462,6294469,6295083,6299080,6299081,6299082,6299083,6299085,6299086,6299087,6299088,6299089,6299090,6299091,6299093,6299096,6299097,6299098,6299101,6299102,6299103,6299104,6299105,6299109,6299113,6299119,6299127,6299128,6299130,6299131"><font color="black">JSON</font></a></li> </ul><div style="text-align: center;" class="paginator" id="paginator_example_top"></div><script type="text/javascript">paginator_example_top = new Paginator("paginator_example_top", 80, 25, 1, "/index.php?req=sci-fi&curtab=f&order=&ordermode=desc&filesuns=all&page=" );</script><table class="table  table-striped" id="tablelibgen"><thead><tr>
+
+<th scope="col" class="first_col"><nobr>
+ID <a href="/index.php?req=sci-fi&curtab=f&order=f_id&ordermode=asc">&#8597</a> 
+Time add. <a href="/index.php?req=sci-fi&curtab=f&order=time_added&ordermode=asc">&#8597</a> 
+Title <a href="/index.php?req=sci-fi&curtab=f&order=title&ordermode=asc">&#8597</a> 
+Series <a href="/index.php?req=sci-fi&curtab=f&order=series&ordermode=asc">&#8597</a></nobr></th>
+<th scope="col"><nobr>Author(s) <a href="/index.php?req=sci-fi&curtab=f&order=author&ordermode=asc">&#8597</a></nobr></th>
+<th scope="col"><nobr>Publisher <a href="/index.php?req=sci-fi&curtab=f&order=publisher&ordermode=asc">&#8597</a></nobr></th>
+<th scope="col"><nobr>Year <a href="/index.php?req=sci-fi&curtab=f&order=year&ordermode=asc">&#8597</a></nobr></th>
+<th scope="col">Language</th>
+<th scope="col">Pages</th>
+<th scope="col"><nobr>Size  <a href="/index.php?req=sci-fi&curtab=f&order=filesize&ordermode=asc">&#8597</a></nobr></th>
+<th scope="col"><nobr>Ext. <a href="/index.php?req=sci-fi&curtab=f&order=extension&ordermode=asc">&#8597</a></nobr></th>
+<th scope="col">Mirrors</th>
+</tr></thead><tbody><tr>
+
+<td><b><a href="series.php?id=125740">2000AD Sci-Fi Special   </a><a data-toggle="tooltip" data-placement="right" data-html="true" title="Add/Edit : 2015-07-15/2022-08-21; ID: 29318<br>2000 AD Sci-Fi Special 1980" href="edition.php?id=161086"><i> #3 1980-jul 1</i></a><br>2000AD</b><br><a data-toggle="tooltip" data-placement="right" data-html="true" title="Add/Edit : 2015-07-15/2022-08-21; ID: 29318<br>2000 AD Sci-Fi Special 1980" href="edition.php?id=161086">2000ad Sci-Fi Special 1980 <i></i></a> 
+<nobr><span class="badge badge-primary"><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="Comics issue">c</a></span> 
+<span class="badge badge-secondary"">c 980915</span></nobr>
+<font size=1 color="gray"><br>2000 AD Sci-Fi Special 1980 <br><b>2436x1632px 150dpi</b></font>
+</td>
+<td>Alan Grant (writer), Alan Moore (writer), Brian Bolland (artist), Dave Harwood (artist), Floyd Hughes (artist),<input type="checkbox" id="29318" class="taghide"/><label for="29318" ><b>[...]</b></label><div id="29318"> Gary Rice (writer), Jesus Blasco (artist), Mick McMahon (cover), Robin Smith (artist), Steve Dillon (artist), Trevor Goring (artist)</div></td>
+<td><a href="publisher.php?id=22745">Rebellion</a></td>
+<td><nobr>1980 July 1</nobr></td>
+<td>English</td>
+<td>61</td>
+<td><nobr><a href="/file.php?id=29318">18 MB</a></nobr></td>
+<td>cbr</td>
+<td><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="libgen" href="/get.php?md5=12be5fa5a9e7b61c8cdd57fd9cbc6cc4"><span class="badge badge-primary">Libgen</span></a> <a data-toggle="tooltip" data-placement="bottom" data-html="true" title="anna's archive" href="https://en.annas-archive.gl/md5/12be5fa5a9e7b61c8cdd57fd9cbc6cc4?r=Ax2w6jC"><span class="badge badge-primary">Anna's arch</span></a> </td>
+</tr><tr>
+
+<td><b><a href="series.php?id=125740">2000AD Sci-Fi Special   </a><a data-toggle="tooltip" data-placement="right" data-html="true" title="Add/Edit : 2019-01-21/2023-07-01; ID: 994699<br>2000 AD Sci-Fi Special 1994" href="edition.php?id=161095"><i> #17 1994-jul 1</i></a><br>The World of Judge Dredd</b><br><a data-toggle="tooltip" data-placement="right" data-html="true" title="Add/Edit : 2019-01-21/2023-07-01; ID: 994699<br>2000 AD Sci-Fi Special 1994" href="edition.php?id=161095">2000ad Sci-Fi Special 1994 <i></i></a> 
+<nobr><span class="badge badge-primary"><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="Comics issue">c</a></span> 
+<span class="badge badge-secondary"">c 1889169</span></nobr>
+<font size=1 color="gray"><br>2000 AD Sci-Fi Special 1994 <br><b>1280x1760px 300dpi</b></font>
+</td>
+<td>Alan Grant (writer), Alan McKenzie (writer), Barry Kitson (artist), Dave D'Antiquis (artist), Henry Flint (cover),<input type="checkbox" id="994699" class="taghide"/><label for="994699" ><b>[...]</b></label><div id="994699"> John Smith (writer), John Wagner (writer), Mark Harrison (artist), Mark Millar (writer), Peter Doherty (artist), Peter Hogan (writer), Rian Hughes (artist), Simon Jacob (artist), Steve White (writer)</div></td>
+<td><a href="publisher.php?id=22745">Rebellion</a></td>
+<td><nobr>1994 July 1</nobr></td>
+<td>English</td>
+<td>69</td>
+<td><nobr><a href="/file.php?id=994699">32 MB</a></nobr></td>
+<td>cbr</td>
+<td><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="libgen" href="/get.php?md5=5534538af387377143b8db45f13f61bb"><span class="badge badge-primary">Libgen</span></a> <a data-toggle="tooltip" data-placement="bottom" data-html="true" title="anna's archive" href="https://en.annas-archive.gl/md5/5534538af387377143b8db45f13f61bb?r=Ax2w6jC"><span class="badge badge-primary">Anna's arch</span></a> </td>
+</tr><tr>
+
+<td><b><a href="series.php?id=125740">2000AD Sci-Fi Special   </a><a data-toggle="tooltip" data-placement="right" data-html="true" title="Add/Edit : 2015-07-15/2021-06-18; ID: 1755767<br>2000AD Sci-Fi Special (1980)" href="edition.php?id=161086"><i> #3 1980-jul 1</i></a><br>2000AD</b><br><a data-toggle="tooltip" data-placement="right" data-html="true" title="Add/Edit : 2015-07-15/2021-06-18; ID: 1755767<br>2000AD Sci-Fi Special (1980)" href="edition.php?id=161086">2000ad Sci-Fi Special 1980 <i></i></a> 
+<nobr><span class="badge badge-primary"><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="Comics issue">c</a></span> 
+<span class="badge badge-secondary"">c 542119</span></nobr>
+<font size=1 color="gray"><br>2000AD Sci-Fi Special (1980) <br><b> </b></font>
+</td>
+<td>Alan Grant (writer), Alan Moore (writer), Brian Bolland (artist), Dave Harwood (artist), Floyd Hughes (artist),<input type="checkbox" id="1755767" class="taghide"/><label for="1755767" ><b>[...]</b></label><div id="1755767"> Gary Rice (writer), Jesus Blasco (artist), Mick McMahon (cover), Robin Smith (artist), Steve Dillon (artist), Trevor Goring (artist)</div></td>
+<td><a href="publisher.php?id=22745">Rebellion</a></td>
+<td><nobr>1980 July 1</nobr></td>
+<td>English</td>
+<td>0</td>
+<td><nobr><a href="/file.php?id=1755767">66 MB</a></nobr></td>
+<td>pdf</td>
+<td><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="libgen" href="/get.php?md5=2b3fadaac8c4b0ada66c41d622266370"><span class="badge badge-primary">Libgen</span></a> <a data-toggle="tooltip" data-placement="bottom" data-html="true" title="anna's archive" href="https://en.annas-archive.gl/md5/2b3fadaac8c4b0ada66c41d622266370?r=Ax2w6jC"><span class="badge badge-primary">Anna's arch</span></a> </td>
+</tr><tr>
+
+<td><b><a href="series.php?id=125740">2000AD Sci-Fi Special   </a><a data-toggle="tooltip" data-placement="right" data-html="true" title="Add/Edit : 2017-03-08/2021-06-18; ID: 1755769<br>2000 AD Sci-Fi Special #003" href="edition.php?id=161086"><i> #3 1980-jul 1</i></a><br>2000AD</b><br><a data-toggle="tooltip" data-placement="right" data-html="true" title="Add/Edit : 2017-03-08/2021-06-18; ID: 1755769<br>2000 AD Sci-Fi Special #003" href="edition.php?id=161086">2000ad Sci-Fi Special 1980 <i></i></a> 
+<nobr><span class="badge badge-primary"><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="Comics issue">c</a></span> 
+<span class="badge badge-secondary"">c 542121</span></nobr>
+<font size=1 color="gray"><br>2000 AD Sci-Fi Special #003 <br><b> </b></font>
+</td>
+<td>Alan Grant (writer), Alan Moore (writer), Brian Bolland (artist), Dave Harwood (artist), Floyd Hughes (artist),<input type="checkbox" id="1755769" class="taghide"/><label for="1755769" ><b>[...]</b></label><div id="1755769"> Gary Rice (writer), Jesus Blasco (artist), Mick McMahon (cover), Robin Smith (artist), Steve Dillon (artist), Trevor Goring (artist)</div></td>
+<td><a href="publisher.php?id=22745">Rebellion</a></td>
+<td><nobr>1980 July 1</nobr></td>
+<td>English</td>
+<td>64</td>
+<td><nobr><a href="/file.php?id=1755769">66 MB</a></nobr></td>
+<td>cbr</td>
+<td><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="libgen" href="/get.php?md5=9c459003405f5190037586b1eb8a3a4b"><span class="badge badge-primary">Libgen</span></a> <a data-toggle="tooltip" data-placement="bottom" data-html="true" title="anna's archive" href="https://en.annas-archive.gl/md5/9c459003405f5190037586b1eb8a3a4b?r=Ax2w6jC"><span class="badge badge-primary">Anna's arch</span></a> </td>
+</tr><tr>
+
+<td><b><a href="series.php?id=125740">2000AD Sci-Fi Special   </a><a data-toggle="tooltip" data-placement="right" data-html="true" title="Add/Edit : 2015-07-15/2021-06-18; ID: 1755771<br>2000 AD Sci-Fi Special 1982" href="edition.php?id=161087"><i> #5 1982-jul 1</i></a><br>The World of Judge Dredd</b><br><a data-toggle="tooltip" data-placement="right" data-html="true" title="Add/Edit : 2015-07-15/2021-06-18; ID: 1755771<br>2000 AD Sci-Fi Special 1982" href="edition.php?id=161087">2000ad Sci-Fi Special 1982 <i></i></a> 
+<nobr><span class="badge badge-primary"><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="Comics issue">c</a></span> 
+<span class="badge badge-secondary"">c 542123</span></nobr>
+<font size=1 color="gray"><br>2000 AD Sci-Fi Special 1982 <br><b>1200x1650px 72dpi</b></font>
+</td>
+<td>Alan Grant (writer), Brett Ewins (artist), Eric Bradbury (artist), Gerry Finley-Day (writer), Ian Gibson (cover),<input type="checkbox" id="1755771" class="taghide"/><label for="1755771" ><b>[...]</b></label><div id="1755771"> Joe Staton (artist), John Wagner (writer), Jose Casanovas (artist), Massimo Belardinelli (artist), Pat Mills (writer), Ron Smith (artist)</div></td>
+<td><a href="publisher.php?id=22745">Rebellion</a></td>
+<td><nobr>1982 July 1</nobr></td>
+<td>English</td>
+<td>59</td>
+<td><nobr><a href="/file.php?id=1755771">24 MB</a></nobr></td>
+<td>cbr</td>
+<td><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="libgen" href="/get.php?md5=5c600d7b17b6c740fa5936b5f79968ef"><span class="badge badge-primary">Libgen</span></a> <a data-toggle="tooltip" data-placement="bottom" data-html="true" title="anna's archive" href="https://en.annas-archive.gl/md5/5c600d7b17b6c740fa5936b5f79968ef?r=Ax2w6jC"><span class="badge badge-primary">Anna's arch</span></a> </td>
+</tr><tr>
+
+<td><b><a href="series.php?id=125740">2000AD Sci-Fi Special   </a><a data-toggle="tooltip" data-placement="right" data-html="true" title="Add/Edit : 2015-07-15/2021-06-18; ID: 1755772<br>2000AD Sci-Fi Special (1982)" href="edition.php?id=161087"><i> #5 1982-jul 1</i></a><br>The World of Judge Dredd</b><br><a data-toggle="tooltip" data-placement="right" data-html="true" title="Add/Edit : 2015-07-15/2021-06-18; ID: 1755772<br>2000AD Sci-Fi Special (1982)" href="edition.php?id=161087">2000ad Sci-Fi Special 1982 <i></i></a> 
+<nobr><span class="badge badge-primary"><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="Comics issue">c</a></span> 
+<span class="badge badge-secondary"">c 542124</span></nobr>
+<font size=1 color="gray"><br>2000AD Sci-Fi Special (1982) <br><b> </b></font>
+</td>
+<td>Alan Grant (writer), Brett Ewins (artist), Eric Bradbury (artist), Gerry Finley-Day (writer), Ian Gibson (cover),<input type="checkbox" id="1755772" class="taghide"/><label for="1755772" ><b>[...]</b></label><div id="1755772"> Joe Staton (artist), John Wagner (writer), Jose Casanovas (artist), Massimo Belardinelli (artist), Pat Mills (writer), Ron Smith (artist)</div></td>
+<td><a href="publisher.php?id=22745">Rebellion</a></td>
+<td><nobr>1982 July 1</nobr></td>
+<td>English</td>
+<td>0</td>
+<td><nobr><a href="/file.php?id=1755772">74 MB</a></nobr></td>
+<td>pdf</td>
+<td><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="libgen" href="/get.php?md5=1d3e33ad1e97251e70d7f9cfa413696f"><span class="badge badge-primary">Libgen</span></a> <a data-toggle="tooltip" data-placement="bottom" data-html="true" title="anna's archive" href="https://en.annas-archive.gl/md5/1d3e33ad1e97251e70d7f9cfa413696f?r=Ax2w6jC"><span class="badge badge-primary">Anna's arch</span></a> </td>
+</tr><tr>
+
+<td><b><a href="series.php?id=125740">2000AD Sci-Fi Special   </a><a data-toggle="tooltip" data-placement="right" data-html="true" title="Add/Edit : 2017-03-28/2021-06-18; ID: 1755774<br>2000 AD Sci-Fi Special #005" href="edition.php?id=161087"><i> #5 1982-jul 1</i></a><br>The World of Judge Dredd</b><br><a data-toggle="tooltip" data-placement="right" data-html="true" title="Add/Edit : 2017-03-28/2021-06-18; ID: 1755774<br>2000 AD Sci-Fi Special #005" href="edition.php?id=161087">2000ad Sci-Fi Special 1982 <i></i></a> 
+<nobr><span class="badge badge-primary"><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="Comics issue">c</a></span> 
+<span class="badge badge-secondary"">c 542126</span></nobr>
+<font size=1 color="gray"><br>2000 AD Sci-Fi Special #005 <br><b> </b></font>
+</td>
+<td>Alan Grant (writer), Brett Ewins (artist), Eric Bradbury (artist), Gerry Finley-Day (writer), Ian Gibson (cover),<input type="checkbox" id="1755774" class="taghide"/><label for="1755774" ><b>[...]</b></label><div id="1755774"> Joe Staton (artist), John Wagner (writer), Jose Casanovas (artist), Massimo Belardinelli (artist), Pat Mills (writer), Ron Smith (artist)</div></td>
+<td><a href="publisher.php?id=22745">Rebellion</a></td>
+<td><nobr>1982 July 1</nobr></td>
+<td>English</td>
+<td>64</td>
+<td><nobr><a href="/file.php?id=1755774">75 MB</a></nobr></td>
+<td>cbr</td>
+<td><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="libgen" href="/get.php?md5=52f617da2f99459f77a2cf90ed2b4f56"><span class="badge badge-primary">Libgen</span></a> <a data-toggle="tooltip" data-placement="bottom" data-html="true" title="anna's archive" href="https://en.annas-archive.gl/md5/52f617da2f99459f77a2cf90ed2b4f56?r=Ax2w6jC"><span class="badge badge-primary">Anna's arch</span></a> </td>
+</tr><tr>
+
+<td><b><a href="series.php?id=125740">2000AD Sci-Fi Special   </a><a data-toggle="tooltip" data-placement="right" data-html="true" title="Add/Edit : 2015-07-15/2021-06-18; ID: 1755776<br>2000 AD Sci-Fi Special 1983" href="edition.php?id=161088"><i> #6 1983-jul 1</i></a><br>The World of Judge Dredd</b><br><a data-toggle="tooltip" data-placement="right" data-html="true" title="Add/Edit : 2015-07-15/2021-06-18; ID: 1755776<br>2000 AD Sci-Fi Special 1983" href="edition.php?id=161088">2000ad Sci-Fi Special 1983 <i></i></a> 
+<nobr><span class="badge badge-primary"><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="Comics issue">c</a></span> 
+<span class="badge badge-secondary"">c 542128</span></nobr>
+<font size=1 color="gray"><br>2000 AD Sci-Fi Special 1983 <br><b>2400x1650px 72dpi</b></font>
+</td>
+<td>Alan Grant (writer), Gerry Finley-Day (writer), John Byrne (artist), John Cooper (artist), John Wagner (writer),<input type="checkbox" id="1755776" class="taghide"/><label for="1755776" ><b>[...]</b></label><div id="1755776"> Mike Dorey (artist), Mike White (artist), Rafael Boluda Vidal (artist), Robin Smith (artist), Ron Smith (cover)</div></td>
+<td><a href="publisher.php?id=22745">Rebellion</a></td>
+<td><nobr>1983 July 1</nobr></td>
+<td>English</td>
+<td>59</td>
+<td><nobr><a href="/file.php?id=1755776">22 MB</a></nobr></td>
+<td>cbr</td>
+<td><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="libgen" href="/get.php?md5=fdb4252700316ffc269b87aaa9f2b658"><span class="badge badge-primary">Libgen</span></a> <a data-toggle="tooltip" data-placement="bottom" data-html="true" title="anna's archive" href="https://en.annas-archive.gl/md5/fdb4252700316ffc269b87aaa9f2b658?r=Ax2w6jC"><span class="badge badge-primary">Anna's arch</span></a> </td>
+</tr><tr>
+
+<td><b><a href="series.php?id=125740">2000AD Sci-Fi Special   </a><a data-toggle="tooltip" data-placement="right" data-html="true" title="Add/Edit : 2015-07-15/2021-06-18; ID: 1755778<br>2000 AD Sci-Fi Special 1984 (Imbie)" href="edition.php?id=161089"><i> #7 1984-jul 1</i></a></b><br><a data-toggle="tooltip" data-placement="right" data-html="true" title="Add/Edit : 2015-07-15/2021-06-18; ID: 1755778<br>2000 AD Sci-Fi Special 1984 (Imbie)" href="edition.php?id=161089">2000ad Sci-Fi Special 1984 <i></i></a> 
+<nobr><span class="badge badge-primary"><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="Comics issue">c</a></span> 
+<span class="badge badge-secondary"">c 542130</span></nobr>
+<font size=1 color="gray"><br>2000 AD Sci-Fi Special 1984 (Imbie) <br><b>1770x1280px 199dpi</b></font>
+</td>
+<td>Brett Ewins (artist), Chris Lowder (writer), Cliff Robinson (artist), Gerry Finley-Day (writer), Horacio Lalia (artist),<input type="checkbox" id="1755778" class="taghide"/><label for="1755778" ><b>[...]</b></label><div id="1755778"> Ian Kennedy (cover), John Stokes (artist), John Wagner (writer), Mike Dorey (artist), Pat Mills (writer), Ramon Sola (artist), Ron Smith (artist), Simon Geller (writer), Trevor Goring (artist)</div></td>
+<td><a href="publisher.php?id=22745">Rebellion</a></td>
+<td><nobr>1984 July 1</nobr></td>
+<td>English</td>
+<td>64</td>
+<td><nobr><a href="/file.php?id=1755778">25 MB</a></nobr></td>
+<td>cbr</td>
+<td><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="libgen" href="/get.php?md5=9ad7c823a5d54072e94af7ffb2a529bb"><span class="badge badge-primary">Libgen</span></a> <a data-toggle="tooltip" data-placement="bottom" data-html="true" title="anna's archive" href="https://en.annas-archive.gl/md5/9ad7c823a5d54072e94af7ffb2a529bb?r=Ax2w6jC"><span class="badge badge-primary">Anna's arch</span></a> </td>
+</tr><tr>
+
+<td><b><a href="series.php?id=125740">2000AD Sci-Fi Special   </a><a data-toggle="tooltip" data-placement="right" data-html="true" title="Add/Edit : 2015-07-15/2021-06-18; ID: 1755782<br>2000 AD Sci-Fi Special 1987 (Reiu-DCP)" href="edition.php?id=161091"><i> #10 1987-jul 1</i></a><br>The World of Judge Dredd</b><br><a data-toggle="tooltip" data-placement="right" data-html="true" title="Add/Edit : 2015-07-15/2021-06-18; ID: 1755782<br>2000 AD Sci-Fi Special 1987 (Reiu-DCP)" href="edition.php?id=161091">2000ad Sci-Fi Special 1987 <i></i></a> 
+<nobr><span class="badge badge-primary"><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="Comics issue">c</a></span> 
+<span class="badge badge-secondary"">c 542134</span></nobr>
+<font size=1 color="gray"><br>2000 AD Sci-Fi Special 1987 (Reiu-DCP) <br><b>1280x1810px 72dpi</b></font>
+</td>
+<td>Alan Davis (artist), Alan Grant (writer), Bryan Talbot (inker), Carlos Ezquerra (artist), Dave McKean (artist),<input type="checkbox" id="1755782" class="taghide"/><label for="1755782" ><b>[...]</b></label><div id="1755782"> Garry Leach (cover), John Wagner (writer), Mark Farmer (inker), Mike Collins (penciler), Mike Matthews (penciler), Pat Mills (writer), Robin Smith (artist), Ron Smith (artist), Tony Luke (production, writer)</div></td>
+<td><a href="publisher.php?id=22745">Rebellion</a></td>
+<td><nobr>1987 July 1</nobr></td>
+<td>English</td>
+<td>57</td>
+<td><nobr><a href="/file.php?id=1755782">32 MB</a></nobr></td>
+<td>cbr</td>
+<td><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="libgen" href="/get.php?md5=0941440a97c8f1d24f38d8a0a8db3764"><span class="badge badge-primary">Libgen</span></a> <a data-toggle="tooltip" data-placement="bottom" data-html="true" title="anna's archive" href="https://en.annas-archive.gl/md5/0941440a97c8f1d24f38d8a0a8db3764?r=Ax2w6jC"><span class="badge badge-primary">Anna's arch</span></a> </td>
+</tr><tr>
+
+<td><b><a href="series.php?id=125740">2000AD Sci-Fi Special   </a><a data-toggle="tooltip" data-placement="right" data-html="true" title="Add/Edit : 2015-07-15/2021-06-18; ID: 1755785<br>2000 AD Sci-Fi Special 1988" href="edition.php?id=161092"><i> #11 1988-jul 1</i></a></b><br><a data-toggle="tooltip" data-placement="right" data-html="true" title="Add/Edit : 2015-07-15/2021-06-18; ID: 1755785<br>2000 AD Sci-Fi Special 1988" href="edition.php?id=161092">2000ad Sci-Fi Special 1988 <i></i></a> 
+<nobr><span class="badge badge-primary"><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="Comics issue">c</a></span> 
+<span class="badge badge-secondary"">c 542137</span></nobr>
+<font size=1 color="gray"><br>2000 AD Sci-Fi Special 1988 <br><b>846x1162px 100dpi</b></font>
+</td>
+<td>Alan Grant (writer), Colin MacNeil (artist), Grant Morrison (writer), Hilary Robinson (writer), Ian Kennedy (artist),<input type="checkbox" id="1755785" class="taghide"/><label for="1755785" ><b>[...]</b></label><div id="1755785"> John McCrea (artist), John Smith (writer), Pat Mills (writer), Phil Elliott (artist), Steve Dillon (artist, cover), Steve Yeowell (artist), William Simpson (artist)</div></td>
+<td><a href="publisher.php?id=22745">Rebellion</a></td>
+<td><nobr>1988 July 1</nobr></td>
+<td>English</td>
+<td>62</td>
+<td><nobr><a href="/file.php?id=1755785">18 MB</a></nobr></td>
+<td>cbr</td>
+<td><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="libgen" href="/get.php?md5=c40da44186916147035346d8528eeb10"><span class="badge badge-primary">Libgen</span></a> <a data-toggle="tooltip" data-placement="bottom" data-html="true" title="anna's archive" href="https://en.annas-archive.gl/md5/c40da44186916147035346d8528eeb10?r=Ax2w6jC"><span class="badge badge-primary">Anna's arch</span></a> </td>
+</tr><tr>
+
+<td><b><a href="series.php?id=125740">2000AD Sci-Fi Special   </a><a data-toggle="tooltip" data-placement="right" data-html="true" title="Add/Edit : 2015-07-15/2021-06-18; ID: 1755786<br>2000 AD Sci-Fi Special 1991 (Ziggyhowie)" href="edition.php?id=161093"><i> #14 1991-jul 1</i></a></b><br><a data-toggle="tooltip" data-placement="right" data-html="true" title="Add/Edit : 2015-07-15/2021-06-18; ID: 1755786<br>2000 AD Sci-Fi Special 1991 (Ziggyhowie)" href="edition.php?id=161093">2000ad Sci-Fi Special 1991 <i></i></a> 
+<nobr><span class="badge badge-primary"><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="Comics issue">c</a></span> 
+<span class="badge badge-secondary"">c 542138</span></nobr>
+<font size=1 color="gray"><br>2000 AD Sci-Fi Special 1991 (Ziggyhowie) <br><b>797x1035px 96dpi</b></font>
+</td>
+<td>Alan McKenzie (writer), Andy Lanning (writer), Bryan Hitch (inker), Dave D'Antiquis (artist), Dermot Power (cover),<input type="checkbox" id="1755786" class="taghide"/><label for="1755786" ><b>[...]</b></label><div id="1755786"> Eric Bradbury (artist), John Smith (writer), John Wagner (writer), Jose Casanovas (artist), Mark Buckingham (artist), Mark Millar (writer), Simon Coleby (penciler), Simon Jacob (artist), Steve White (writer)</div></td>
+<td><a href="publisher.php?id=22745">Rebellion</a></td>
+<td><nobr>1991 July 1</nobr></td>
+<td>English</td>
+<td>68</td>
+<td><nobr><a href="/file.php?id=1755786">22 MB</a></nobr></td>
+<td>cbr</td>
+<td><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="libgen" href="/get.php?md5=ef3cc36f010cedc81e2ae7f5869f3f65"><span class="badge badge-primary">Libgen</span></a> <a data-toggle="tooltip" data-placement="bottom" data-html="true" title="anna's archive" href="https://en.annas-archive.gl/md5/ef3cc36f010cedc81e2ae7f5869f3f65?r=Ax2w6jC"><span class="badge badge-primary">Anna's arch</span></a> </td>
+</tr><tr>
+
+<td><b><a href="series.php?id=125740">2000AD Sci-Fi Special   </a><a data-toggle="tooltip" data-placement="right" data-html="true" title="Add/Edit : 2015-07-15/2021-06-18; ID: 1755788<br>2000 AD Sci-Fi Special 1992 (Reiu-DCP)" href="edition.php?id=161094"><i> #15 1992-jul 1</i></a></b><br><a data-toggle="tooltip" data-placement="right" data-html="true" title="Add/Edit : 2015-07-15/2021-06-18; ID: 1755788<br>2000 AD Sci-Fi Special 1992 (Reiu-DCP)" href="edition.php?id=161094">2000ad Sci-Fi Special 1992 <i></i></a> 
+<nobr><span class="badge badge-primary"><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="Comics issue">c</a></span> 
+<span class="badge badge-secondary"">c 542140</span></nobr>
+<font size=1 color="gray"><br>2000 AD Sci-Fi Special 1992 (Reiu-DCP) <br><b>1280x1741px 72dpi</b></font>
+</td>
+<td>Alan McKenzie (writer), Brett Ewins (penciler), Chris Weston (artist), Cliff Robinson (artist), Greg Staples (artist),<input type="checkbox" id="1755788" class="taghide"/><label for="1755788" ><b>[...]</b></label><div id="1755788"> Jim McCarthy (inker), John Ridgway (artist), John Smith (writer), John Tomlinson (writer), John Wagner (writer), Mark Millar (writer), Peter Hogan (writer), Sean Phillips (artist), Steve Cook (cover)</div></td>
+<td><a href="publisher.php?id=22745">Rebellion</a></td>
+<td><nobr>1992 July 1</nobr></td>
+<td>English</td>
+<td>65</td>
+<td><nobr><a href="/file.php?id=1755788">38 MB</a></nobr></td>
+<td>cbr</td>
+<td><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="libgen" href="/get.php?md5=2a32aacb26138dcaae9c6b538af77ea6"><span class="badge badge-primary">Libgen</span></a> <a data-toggle="tooltip" data-placement="bottom" data-html="true" title="anna's archive" href="https://en.annas-archive.gl/md5/2a32aacb26138dcaae9c6b538af77ea6?r=Ax2w6jC"><span class="badge badge-primary">Anna's arch</span></a> </td>
+</tr><tr>
+
+<td><b><a href="series.php?id=125740">2000AD Sci-Fi Special   </a><a data-toggle="tooltip" data-placement="right" data-html="true" title="Add/Edit : 2015-07-15/2021-06-18; ID: 1755792<br>2000AD Sci-Fi Special (1994) (Antscan)" href="edition.php?id=161095"><i> #17 1994-jul 1</i></a><br>The World of Judge Dredd</b><br><a data-toggle="tooltip" data-placement="right" data-html="true" title="Add/Edit : 2015-07-15/2021-06-18; ID: 1755792<br>2000AD Sci-Fi Special (1994) (Antscan)" href="edition.php?id=161095">2000ad Sci-Fi Special 1994 <i></i></a> 
+<nobr><span class="badge badge-primary"><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="Comics issue">c</a></span> 
+<span class="badge badge-secondary"">c 542144</span></nobr>
+<font size=1 color="gray"><br>2000AD Sci-Fi Special (1994) (Antscan) <br><b>1280x1698px 300dpi</b></font>
+</td>
+<td>Alan Grant (writer), Alan McKenzie (writer), Barry Kitson (artist), Dave D'Antiquis (artist), Henry Flint (cover),<input type="checkbox" id="1755792" class="taghide"/><label for="1755792" ><b>[...]</b></label><div id="1755792"> John Smith (writer), John Wagner (writer), Mark Harrison (artist), Mark Millar (writer), Peter Doherty (artist), Peter Hogan (writer), Rian Hughes (artist), Simon Jacob (artist), Steve White (writer)</div></td>
+<td><a href="publisher.php?id=22745">Rebellion</a></td>
+<td><nobr>1994 July 1</nobr></td>
+<td>English</td>
+<td>68</td>
+<td><nobr><a href="/file.php?id=1755792">31 MB</a></nobr></td>
+<td>cbr</td>
+<td><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="libgen" href="/get.php?md5=042064354b0acd0f2cce07ecde773a25"><span class="badge badge-primary">Libgen</span></a> <a data-toggle="tooltip" data-placement="bottom" data-html="true" title="anna's archive" href="https://en.annas-archive.gl/md5/042064354b0acd0f2cce07ecde773a25?r=Ax2w6jC"><span class="badge badge-primary">Anna's arch</span></a> </td>
+</tr><tr>
+
+<td><b>Loki Renard's Standalone Sci Fi Romances 10</b><br><a data-toggle="tooltip" data-placement="right" data-html="true" title="Add/Edit : 2026-01-12/2026-01-12; ID: 112918339<br>Renard, Loki - My Big Alien Bodyguard: A Dark Sci Fi Romance (Loki Renard's Standalone Sci Fi Romances) (2023, Loki Renard)" href="edition.php?id=205566915">My Big Alien Bodyguard: A Dark Sci Fi Romance (Loki Renard's Standalone Sci Fi Romances) <i>1</i></a> 
+<nobr><span class="badge badge-primary"><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="Book">b</a></span> 
+<span class="badge badge-secondary"">f 8339093</span></nobr>
+
+</td>
+<td>Renard, Loki</td>
+<td>Loki Renard</td>
+<td><nobr>2023</nobr></td>
+<td>English</td>
+<td>0 / 112</td>
+<td><nobr><a href="/file.php?id=112918339">235 kB</a></nobr></td>
+<td>epub</td>
+<td><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="libgen" href="/ads.php?md5=f953f0fbe4c27ae1550d853d7c597737"><span class="badge badge-primary">1</span></a> <a data-toggle="tooltip" data-placement="bottom" data-html="true" title="Randombook" href="https://randombook.org/book/f953f0fbe4c27ae1550d853d7c597737"><span class="badge badge-primary">2</span></a> <a data-toggle="tooltip" data-placement="bottom" data-html="true" title="anna's archive" href="https://en.annas-archive.gl/md5/f953f0fbe4c27ae1550d853d7c597737?r=Ax2w6jC"><span class="badge badge-primary">3</span></a> <a data-toggle="tooltip" data-placement="bottom" data-html="true" title="libgen.pw" href="https://libgen.pw/book/f953f0fbe4c27ae1550d853d7c597737"><span class="badge badge-primary">4</span></a> <a data-toggle="tooltip" data-placement="bottom" data-html="true" title="libgen.me" href="https://libgen.me/book/f953f0fbe4c27ae1550d853d7c597737"><span class="badge badge-primary">5</span></a> </td>
+</tr><tr>
+
+<td><b><a href="series.php?id=125740">2000AD Sci-Fi Special   </a><a data-toggle="tooltip" data-placement="right" data-html="true" title="Add/Edit : 2015-07-15/2022-08-21; ID: 29316<br>2000 AD Sci-Fi Special 1978" href="edition.php?id=146986310"><i> #1 1978-jul 1</i></a></b> 
+<nobr><span class="badge badge-primary"><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="Comics issue">c</a></span> 
+<span class="badge badge-secondary"">c 980900</span></nobr>
+<font size=1 color="gray"><br>2000 AD Sci-Fi Special 1978 <br><b>1003x1308px 300dpi</b></font>
+</td>
+<td></td>
+<td></td>
+<td><nobr>1978 July 1</nobr></td>
+<td>English</td>
+<td>61</td>
+<td><nobr><a href="/file.php?id=29316">21 MB</a></nobr></td>
+<td>cbr</td>
+<td><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="libgen" href="/get.php?md5=d2e8b579e7c51ca48645449439dc5eeb"><span class="badge badge-primary">Libgen</span></a> <a data-toggle="tooltip" data-placement="bottom" data-html="true" title="anna's archive" href="https://en.annas-archive.gl/md5/d2e8b579e7c51ca48645449439dc5eeb?r=Ax2w6jC"><span class="badge badge-primary">Anna's arch</span></a> </td>
+</tr><tr>
+
+<td><b><a href="series.php?id=125740">2000AD Sci-Fi Special   </a><a data-toggle="tooltip" data-placement="right" data-html="true" title="Add/Edit : 2015-07-15/2022-08-21; ID: 29317<br>2000 AD Sci-Fi Special 1979" href="edition.php?id=146986309"><i> #2 1979-jul 1</i></a></b> 
+<nobr><span class="badge badge-primary"><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="Comics issue">c</a></span> 
+<span class="badge badge-secondary"">c 980909</span></nobr>
+<font size=1 color="gray"><br>2000 AD Sci-Fi Special 1979 <br><b>978x1305px 300dpi</b></font>
+</td>
+<td></td>
+<td></td>
+<td><nobr>1979 July 1</nobr></td>
+<td>English</td>
+<td>64</td>
+<td><nobr><a href="/file.php?id=29317">55 MB</a></nobr></td>
+<td>cbr</td>
+<td><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="libgen" href="/get.php?md5=ac7e9c18ad3fdea98b6006ef37bd46d2"><span class="badge badge-primary">Libgen</span></a> <a data-toggle="tooltip" data-placement="bottom" data-html="true" title="anna's archive" href="https://en.annas-archive.gl/md5/ac7e9c18ad3fdea98b6006ef37bd46d2?r=Ax2w6jC"><span class="badge badge-primary">Anna's arch</span></a> </td>
+</tr><tr>
+
+<td><b><a href="series.php?id=125740">2000AD Sci-Fi Special   </a><a data-toggle="tooltip" data-placement="right" data-html="true" title="Add/Edit : 2015-07-15/2022-08-21; ID: 29319<br>2000 AD Sci-Fi Special 1981" href="edition.php?id=142404302"><i> #4 1981-jul 1</i></a></b> 
+<nobr><span class="badge badge-primary"><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="Comics issue">c</a></span> 
+<span class="badge badge-secondary"">c 980922</span></nobr>
+<font size=1 color="gray"><br>2000 AD Sci-Fi Special 1981 <br><b>1200x1650px 72dpi</b></font>
+</td>
+<td></td>
+<td><a href="publisher.php?id=14057">IPC Magazines</a></td>
+<td><nobr>1981 July 1</nobr></td>
+<td>English</td>
+<td>59</td>
+<td><nobr><a href="/file.php?id=29319">25 MB</a></nobr></td>
+<td>cbr</td>
+<td><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="libgen" href="/get.php?md5=417ef7fd0be5ad6d5338ce5891b9ade6"><span class="badge badge-primary">Libgen</span></a> <a data-toggle="tooltip" data-placement="bottom" data-html="true" title="anna's archive" href="https://en.annas-archive.gl/md5/417ef7fd0be5ad6d5338ce5891b9ade6?r=Ax2w6jC"><span class="badge badge-primary">Anna's arch</span></a> </td>
+</tr><tr>
+
+<td><b><a href="series.php?id=125740">2000AD Sci-Fi Special   </a><a data-toggle="tooltip" data-placement="right" data-html="true" title="Add/Edit : 2015-07-15/2022-08-21; ID: 29320<br>2000 AD Sci-Fi Special 1986" href="edition.php?id=146986308"><i> #9 1986-jul 1</i></a></b> 
+<nobr><span class="badge badge-primary"><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="Comics issue">c</a></span> 
+<span class="badge badge-secondary"">c 980939</span></nobr>
+<font size=1 color="gray"><br>2000 AD Sci-Fi Special 1986 <br><b>1662x1164px 100dpi</b></font>
+</td>
+<td></td>
+<td></td>
+<td><nobr>1986 July 1</nobr></td>
+<td>English</td>
+<td>53</td>
+<td><nobr><a href="/file.php?id=29320">15 MB</a></nobr></td>
+<td>cbr</td>
+<td><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="libgen" href="/get.php?md5=56d6e3719d78577e48a1377f628381b1"><span class="badge badge-primary">Libgen</span></a> <a data-toggle="tooltip" data-placement="bottom" data-html="true" title="anna's archive" href="https://en.annas-archive.gl/md5/56d6e3719d78577e48a1377f628381b1?r=Ax2w6jC"><span class="badge badge-primary">Anna's arch</span></a> </td>
+</tr><tr>
+
+<td><b><a href="series.php?id=125740">2000AD Sci-Fi Special   </a><a data-toggle="tooltip" data-placement="right" data-html="true" title="Add/Edit : 2015-07-15/2022-08-21; ID: 29321<br>2000 AD Sci-Fi Special 1989 (The Baron)" href="edition.php?id=141931372"><i> #12 1989-jul 1</i></a></b> 
+<nobr><span class="badge badge-primary"><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="Comics issue">c</a></span> 
+<span class="badge badge-secondary"">c 980947</span></nobr>
+<font size=1 color="gray"><br>2000 AD Sci-Fi Special 1989 (The Baron) <br><b>1222x1666px 198dpi</b></font>
+</td>
+<td>{Collectif}(Colourist); Higgins, Graham Austin, Mick Gibson, Ian Braithwaite, Doug Belardinelli, Massimo(Designer);<input type="checkbox" id="29321" class="taghide"/><label for="29321" ><b>[...]</b></label><div id="29321"> Falco, Sydney Smith, John Grant, Alan Hebden, Alan(Screenplay)</div></td>
+<td><a href="publisher.php?id=10650">Fleetway Publications</a></td>
+<td><nobr>1989 July 1</nobr></td>
+<td>English</td>
+<td>66 / 64</td>
+<td><nobr><a href="/file.php?id=29321">35 MB</a></nobr></td>
+<td>cbr</td>
+<td><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="libgen" href="/get.php?md5=1e379bddcf45ebcf8d95518329abb487"><span class="badge badge-primary">Libgen</span></a> <a data-toggle="tooltip" data-placement="bottom" data-html="true" title="anna's archive" href="https://en.annas-archive.gl/md5/1e379bddcf45ebcf8d95518329abb487?r=Ax2w6jC"><span class="badge badge-primary">Anna's arch</span></a> </td>
+</tr><tr>
+
+<td><b><a href="series.php?id=125740">2000AD Sci-Fi Special   </a><a data-toggle="tooltip" data-placement="right" data-html="true" title="Add/Edit : 2015-07-15/2022-08-21; ID: 29322<br>2000 AD Sci-Fi Special 1990 (Youngstar)" href="edition.php?id=146986307"><i> #13 1990-jul 1</i></a></b> 
+<nobr><span class="badge badge-primary"><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="Comics issue">c</a></span> 
+<span class="badge badge-secondary"">c 980951</span></nobr>
+<font size=1 color="gray"><br>2000 AD Sci-Fi Special 1990 (Youngstar) <br><b>1200x1650px 200dpi</b></font>
+</td>
+<td></td>
+<td></td>
+<td><nobr>1990 July 1</nobr></td>
+<td>English</td>
+<td>67</td>
+<td><nobr><a href="/file.php?id=29322">31 MB</a></nobr></td>
+<td>cbr</td>
+<td><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="libgen" href="/get.php?md5=48b8b847930adb41525a2a713b7d2ac6"><span class="badge badge-primary">Libgen</span></a> <a data-toggle="tooltip" data-placement="bottom" data-html="true" title="anna's archive" href="https://en.annas-archive.gl/md5/48b8b847930adb41525a2a713b7d2ac6?r=Ax2w6jC"><span class="badge badge-primary">Anna's arch</span></a> </td>
+</tr><tr>
+
+<td><b><a href="series.php?id=125740">2000AD Sci-Fi Special   </a><a data-toggle="tooltip" data-placement="right" data-html="true" title="Add/Edit : 2015-07-15/2022-08-21; ID: 29323<br>2000AD Sci-Fi Special 016 (1993)" href="edition.php?id=142362063"><i> #16 1993-jun</i></a></b> 
+<nobr><span class="badge badge-primary"><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="Comics issue">c</a></span> 
+<span class="badge badge-secondary"">c 980892</span></nobr>
+<font size=1 color="gray"><br>2000AD Sci-Fi Special 016 (1993) <br><b>1700x2338px 200dpi</b></font>
+</td>
+<td></td>
+<td><a href="publisher.php?id=14057">IPC Magazines</a></td>
+<td><nobr>1993 June</nobr></td>
+<td>English</td>
+<td>66</td>
+<td><nobr><a href="/file.php?id=29323">72 MB</a></nobr></td>
+<td>cbz</td>
+<td><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="libgen" href="/get.php?md5=725d5db07a78865471dc420b76650a5e"><span class="badge badge-primary">Libgen</span></a> <a data-toggle="tooltip" data-placement="bottom" data-html="true" title="anna's archive" href="https://en.annas-archive.gl/md5/725d5db07a78865471dc420b76650a5e?r=Ax2w6jC"><span class="badge badge-primary">Anna's arch</span></a> </td>
+</tr><tr>
+
+<td><b><a href="series.php?id=125740">2000AD Sci-Fi Special   </a><a data-toggle="tooltip" data-placement="right" data-html="true" title="Add/Edit : 2015-07-15/2022-08-21; ID: 29324<br>2000AD Sci-Fi Special 018 (1995)" href="edition.php?id=142404277"><i> #18 1995-jul 1</i></a></b> 
+<nobr><span class="badge badge-primary"><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="Comics issue">c</a></span> 
+<span class="badge badge-secondary"">c 980893</span></nobr>
+<font size=1 color="gray"><br>2000AD Sci-Fi Special 018 (1995) <br><b>697x979px 200dpi</b></font>
+</td>
+<td></td>
+<td><a href="publisher.php?id=14057">IPC Magazines</a></td>
+<td><nobr>1995 July 1</nobr></td>
+<td>English</td>
+<td>67</td>
+<td><nobr><a href="/file.php?id=29324">72 MB</a></nobr></td>
+<td>cbz</td>
+<td><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="libgen" href="/get.php?md5=7f584778cc17dd0c3df9bc3e3728d520"><span class="badge badge-primary">Libgen</span></a> <a data-toggle="tooltip" data-placement="bottom" data-html="true" title="anna's archive" href="https://en.annas-archive.gl/md5/7f584778cc17dd0c3df9bc3e3728d520?r=Ax2w6jC"><span class="badge badge-primary">Anna's arch</span></a> </td>
+</tr><tr>
+
+<td><b><a href="series.php?id=125740">2000AD Sci-Fi Special   </a><a data-toggle="tooltip" data-placement="right" data-html="true" title="Add/Edit : 2015-07-15/2022-08-21; ID: 30369<br>2000AD Sci-Fi Special (1986)" href="edition.php?id=146986308"><i> #9 1986-jul 1</i></a></b> 
+<nobr><span class="badge badge-primary"><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="Comics issue">c</a></span> 
+<span class="badge badge-secondary"">c 980940</span></nobr>
+<font size=1 color="gray"><br>2000AD Sci-Fi Special (1986) <br><b> </b></font>
+</td>
+<td></td>
+<td></td>
+<td><nobr>1986 July 1</nobr></td>
+<td>English</td>
+<td>0</td>
+<td><nobr><a href="/file.php?id=30369">44 MB</a></nobr></td>
+<td>pdf</td>
+<td><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="libgen" href="/get.php?md5=5f897309cda8d1d17dd4804768383b31"><span class="badge badge-primary">Libgen</span></a> <a data-toggle="tooltip" data-placement="bottom" data-html="true" title="anna's archive" href="https://en.annas-archive.gl/md5/5f897309cda8d1d17dd4804768383b31?r=Ax2w6jC"><span class="badge badge-primary">Anna's arch</span></a> </td>
+</tr><tr>
+
+<td><b><a href="series.php?id=125740">2000AD Sci-Fi Special   </a><a data-toggle="tooltip" data-placement="right" data-html="true" title="Add/Edit : 2015-07-15/2022-08-21; ID: 30370<br>2000AD Sci-Fi Special (1996)" href="edition.php?id=142404313"><i> #19 1996-jul 1</i></a></b> 
+<nobr><span class="badge badge-primary"><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="Comics issue">c</a></span> 
+<span class="badge badge-secondary"">c 980966</span></nobr>
+<font size=1 color="gray"><br>2000AD Sci-Fi Special (1996) <br><b>1280x1773px 300dpi</b></font>
+</td>
+<td></td>
+<td><a href="publisher.php?id=14057">IPC Magazines</a></td>
+<td><nobr>1996 July 1</nobr></td>
+<td>English</td>
+<td>60</td>
+<td><nobr><a href="/file.php?id=30370">33 MB</a></nobr></td>
+<td>cbr</td>
+<td><a data-toggle="tooltip" data-placement="bottom" data-html="true" title="libgen" href="/get.php?md5=745bc2b58bf5e7e014cd443e0fb7b9f3"><span class="badge badge-primary">Libgen</span></a> <a data-toggle="tooltip" data-placement="bottom" data-html="true" title="anna's archive" href="https://en.annas-archive.gl/md5/745bc2b58bf5e7e014cd443e0fb7b9f3?r=Ax2w6jC"><span class="badge badge-primary">Anna's arch</span></a> </td>
+</tr></tbody></table><table>
+  <tr>
+    <td><script type="text/javascript">
+	atOptions = {
+		'key' : '80ff16b446cdd16fda9f69edcec465d4',
+		'format' : 'iframe',
+		'height' : 60,
+		'width' : 468,
+		'params' : {}
+	};
+</script>
+<script src="https://raisinggrannyexplode.com/80ff16b446cdd16fda9f69edcec465d4/invoke.js"></script>
+
+</td>
+    <td><script type="text/javascript">
+	atOptions = {
+		'key' : '80ff16b446cdd16fda9f69edcec465d4',
+		'format' : 'iframe',
+		'height' : 60,
+		'width' : 468,
+		'params' : {}
+	};
+</script>
+<script src="https://raisinggrannyexplode.com/80ff16b446cdd16fda9f69edcec465d4/invoke.js"></script>
+
+</td>
+  </tr> 
+  <tr>
+    <td><script type="text/javascript">
+	atOptions = {
+		'key' : '80ff16b446cdd16fda9f69edcec465d4',
+		'format' : 'iframe',
+		'height' : 60,
+		'width' : 468,
+		'params' : {}
+	};
+</script>
+<script src="https://raisinggrannyexplode.com/80ff16b446cdd16fda9f69edcec465d4/invoke.js"></script>
+
+</td>
+    <td><script type="text/javascript">
+	atOptions = {
+		'key' : '80ff16b446cdd16fda9f69edcec465d4',
+		'format' : 'iframe',
+		'height' : 60,
+		'width' : 468,
+		'params' : {}
+	};
+</script>
+<script src="https://raisinggrannyexplode.com/80ff16b446cdd16fda9f69edcec465d4/invoke.js"></script>
+
+</td>
+  </tr> 
+  <tr>
+    <td><script type="text/javascript">
+	atOptions = {
+		'key' : '80ff16b446cdd16fda9f69edcec465d4',
+		'format' : 'iframe',
+		'height' : 60,
+		'width' : 468,
+		'params' : {}
+	};
+</script>
+<script src="https://raisinggrannyexplode.com/80ff16b446cdd16fda9f69edcec465d4/invoke.js"></script>
+
+</td>
+    <td><script type="text/javascript">
+	atOptions = {
+		'key' : '80ff16b446cdd16fda9f69edcec465d4',
+		'format' : 'iframe',
+		'height' : 60,
+		'width' : 468,
+		'params' : {}
+	};
+</script>
+<script src="https://raisinggrannyexplode.com/80ff16b446cdd16fda9f69edcec465d4/invoke.js"></script>
+
+</td>
+  </tr> 
+</table><div style="text-align: center;" class="paginator" id="paginator_example_bottom"></div><script type="text/javascript">paginator_example_bottom = new Paginator("paginator_example_bottom", 80, 25, 1, "/index.php?req=sci-fi&curtab=f&order=&ordermode=desc&filesuns=all&page=" );</script><div class="modal fade text-dark" id="googlemodemodal" tabindex="-1" aria-labelledby="googlemodemodalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="googlemodemodalLabel">Google mode</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+By default, the search searches for a set of marked fields containing all the words specified in the query in no particular order<br>
+Advanced search mode (Google mode), allows you to set more precise search terms:<br>
+- Quotes: "" - search exactly for the phrase as it is written in the database<br>
+- Mask: * (min 3 chars)- search by part of a word<br>
+- Excluding words: - (minus) - does not display records containing this word, also, these conditions can be combined.<br>
+Example:<br>
+"Physics and Chemistry" Basi * -technology<br>
+means the title of the book contains the exact phrase "Physics and Chemistry", contains the word starting with Basi and does not contain the word technology.<br>
+You can also search for a specific field or view mode that is not displayed for selection in the interface, syntax: field_name:value<br>
+List of add. fields:<br>
+For the Files tab:<br>
+<i>md5</i><br>
+<i>tth</i><br>
+<i>sha1</i><br>
+<i>sha256</i><br>
+<i>crc32</i><br>
+<i>edonkey</i><br>
+<i>doi</i><br>
+
+View modes:<br>
+<i>mode:last</i> - last added entries (for a given object - series, authors, editions, etc.)<br>
+<br>
+<i>fmode:last</i> - last added files (for the given repository)<br>
+<br>
+Add. fields for object "editions" and "files":<br>
+<i>issuevolume</i> - periodical volume<br>
+<i>issuesid</i> - serial ID of the periodical<br>
+<i>issuenumber</i> - the number (within the volume) of the periodical<br>
+<i>issuetnumber</i> is the gross number of the periodical<br>
+<i>issueynumber</i> - intra-annual issue of the periodical<br>
+<i>year</i> - year<br>
+<i>publisherid</i> - Publisher ID<br>
+<i>authorid</i> - Author's ID<br>
+<i>lang</i> - three-letter language code (ISO 639)<br>
+<i>fsize</i> - filesize (MBytes), for example: fsize&gt;10, fsize&lt;20, fsize=15<br>
+<i>ext</i> - File extenstion <br>
+<i>booktopicid</i> - ID of the classifier for books<br>
+<i>tags</i> - Теги (издание, работы, серия)<br>
+<br>
+Add. fields for object "series"<br>
+<i>comtopicid</i> - ID of the classifier for comics<br>
+<i>smtopicid</i> - ID of the classifier for scientific journals<br>
+<i>magtopicid</i> - ID of the classifier for magazines<br>
+<i>issn</i> - ISSN
+
+      </div>
+    </div>
+  </div>
+</div><nav class="navbar sticky-bottom navbar-expand-sm navbar-dark bg-secondary">
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+	    <a class="nav-link" href="#" data-toggle="modal" data-target="#dmcamodal">DMCA</a>
+      </li>
+      <li class="nav-item">
+	    <a class="nav-link" href="#" data-toggle="modal" data-target="#aboutmodal">ABOUT</a>
+      </li>
+      <li class="nav-item">
+	    <a class="nav-link" href="#" data-toggle="modal" data-target="#donatemodal" >DONATE</a>
+      </li>
+	
+    </ul>
+	<span class="navbar-text">Users online 0</span>
+  </div>
+</nav>
+
+<!-- Modal Donate -->
+<div class="modal fade text-dark" id="donatemodal" tabindex="-1" aria-labelledby="donatemodalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="donatemodalLabel">Donate</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <a href="bitcoin://bc1qlv9lwa5vncm2jjrxyhddfcvu0z3u5vn0s9672r">Bitcoin</a>
+	<br>
+        <a href="monero:48WhyKv4D9x53SyDFNYuMsHsDzuHXEcht4mWoFtXtE3k4KZ3A7goi3CQWBQQZ3A8PSK7CpwnAFKLnfGiZTAbEpcaCQCghvN">Monero</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal About -->
+<div class="modal fade text-dark" id="aboutmodal" tabindex="-1" aria-labelledby="aboutmodalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="aboutmodalLabel">About</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+
+<div id="about">
+The Library Genesis aggregator is a community aiming at collecting and cataloging items descriptions for the most part of scientific, 
+scientific and technical directions, as well as file metadata. In addition to the descriptions, 
+the aggregator contains only links to third-party resources hosted by users. 
+All information posted on the website is collected from publicly available public Internet resources and is intended solely for informational purposes.  
+</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal DMCA -->
+<div class="modal fade text-dark" id="dmcamodal" tabindex="-1" aria-labelledby="dmcamodalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="dmcamodalLabel">About</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+<div id="dmca">
+Library Genesis - aggregator items is a website that collects and organizes online items from users. 
+Item aggregation is done for fact-finding purposes, and website Library Genesis respects the rights of copyright holders and respect dcma.
+
+     Removing Content From Library Genesis / DMCA Policy
+     Library Genesis respects the intellectual property of others.
+</div>
+
+    <div class="dmca">
+     If you believe that your copyrighted work has been copied in a way that constitutes copyright infringement and is accessible on this site, you may notify our copyright agent, as set forth in the Digital Millennium Copyright Act of 1998 (DMCA). For your complaint to be valid under the DMCA, you must provide the following information when providing notice of the claimed copyright infringement:
+</div>
+    <div class="dmca">
+     * A physical or electronic signature of a person authorized to act on behalf of the copyright owner Identification of the copyrighted work claimed to have been infringed <br />
+     * Identification of the material that is claimed to be infringing or to be the subject of the infringing activity and that is to be removed <br />
+     * Information reasonably sufficient to permit the service provider to contact the complaining party, such as an address, telephone number, and, if available, an electronic mail address <br />
+     * A statement that the complaining party "in good faith believes that use of the material in the manner complained of is not authorized by the copyright owner, its agent, or law" <br />
+     * A statement that the "information in the notification is accurate", and "under penalty of perjury, the complaining party is authorized to act on behalf of the owner of an exclusive right that is allegedly infringed" <br />
+     The above information must be submitted as a written, faxed or emailed notification to the following Designated Agent: ianzlib@protonmail.com. Appeals will be reviewed within 72 hours.</div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.5/dist/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+	<script src="/js/form-validation.js"></script>
+	<script>
+$('[data-toggle="tooltip"]').tooltip();
+$('.btn-tooltip-bottom').tooltip({
+    placement: 'bottom'
+});
+</script>
+
+</body>
+</html>
