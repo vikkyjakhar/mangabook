@@ -55,7 +55,8 @@ export default function MangaDetailsPage() {
           const m = mangaRes.data.data;
           const mTitle = m.attributes.title.en || Object.values(m.attributes.title)[0] || 'Unknown';
           const coverArt = m.relationships.find((r: any) => r.type === 'cover_art');
-          const coverUrl = coverArt?.attributes?.fileName ? `https://uploads.mangadex.org/covers/${m.id}/${coverArt.attributes.fileName}.512.jpg` : '';
+          const rawCoverUrl = coverArt?.attributes?.fileName ? `https://uploads.mangadex.org/covers/${m.id}/${coverArt.attributes.fileName}.512.jpg` : '';
+          const coverUrl = rawCoverUrl ? `/api/proxy?url=${encodeURIComponent(rawCoverUrl)}` : '';
 
           mangaData = {
             title: mTitle,

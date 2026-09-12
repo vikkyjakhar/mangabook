@@ -125,7 +125,8 @@ function SearchContent() {
                 const title = m.attributes?.title?.en || Object.values(m.attributes?.title || {})[0] || 'Unknown';
                 const coverArt = m.relationships?.find((r: any) => r.type === 'cover_art');
                 const coverFileName = coverArt?.attributes?.fileName;
-                const coverUrl = coverFileName ? `https://uploads.mangadex.org/covers/${m.id}/${coverFileName}.256.jpg` : '';
+                const rawCoverUrl = coverFileName ? `https://uploads.mangadex.org/covers/${m.id}/${coverFileName}.256.jpg` : '';
+                const coverUrl = rawCoverUrl ? `/api/proxy?url=${encodeURIComponent(rawCoverUrl)}` : '';
                 
                 // Deduplicate if AniList already added it (naive dedupe by exact title match)
                 if (!combined.some(c => c.title.toLowerCase() === title.toLowerCase())) {
